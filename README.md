@@ -71,37 +71,37 @@
 ### 前端 (algorithmFrontend)
 ```bash
 AlgorithmWeb
-├─ algorithmServer					# 后端
+├─ algorithmServer      # 后端
 │  ├─ requirements.txt									
 │  ├─ manage.py
-│  ├─ storage 							# 文件存储
+│  ├─ storage      # 文件存储
 │  │  └─ luogu_tags.xlsx
 │  ├─ algorithmServer
-│  │  ├─ settings.py		  	#全局配置
-│  │  ├─ urls.py						# api路由
+│  │  ├─ settings.py      #全局配置
+│  │  ├─ urls.py      # api路由
 │  └─ algorithm
-│     ├─ models.py 					# 核心数据库模型
-│     ├─ serializers.py 		# 核心DRF序列化器
+│     ├─ models.py      # 核心数据库模型
+│     ├─ serializers.py      # 核心DRF序列化器
 │     ├─ apps.py
 │     ├─ admin.py
-│     ├─ pagination.py			# 分页器
-│     ├─ views.py						# 核心视图类
-│     └─ scrapers						# 爬虫功能
+│     ├─ pagination.py      # 分页器
+│     ├─ views.py      # 核心视图类
+│     └─ scrapers      # 爬虫功能
 │        ├─ luogu.py
 │        └─ leetcode.py
-└─ algorithmFrontend				# 前端
-   ├─ src										# 核心文件
+└─ algorithmFronte      # 前端
+   ├─ src      # 核心文件
    │  ├─ App.vue												
    │  ├─ main.js	
-   │  ├─ router							# 前端路由
+   │  ├─ router      # 前端路由
    │  │  └─ index.js
-   │  ├─ assets							# 静态资源
-   │  ├─ views							# 核心视图
-   │  ├─ api								# 核心接口
-   │  │  ├─ request.js			# 前后端通信配置，请求、响应拦截器
+   │  ├─ assets      # 静态资源
+   │  ├─ views      # 核心视图
+   │  ├─ api      # 核心接口
+   │  │  ├─ request.js      # 前后端通信配置，请求、响应拦截器
    │  │  └─ ...
-   │  ├─ components					# 可复用组件
-   │  │  └─ AppHeader.vue		# 导航栏
+   │  ├─ components      # 可复用组件
+   │  │  └─ AppHeader.vue      # 导航栏
    │  └─ constants
    │     └─ tags.js
    └─ public
