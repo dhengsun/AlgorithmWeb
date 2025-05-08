@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-t$cg6i4b6&sky^-bq0n%kggxl)sbf7+v^%b71dh%gsg((r)ed8
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '123.60.139.196',  # 你的服务器IP
+    'ip',  # 你的服务器IP
     'localhost',
     '127.0.0.1'
 ]
@@ -83,11 +83,11 @@ WSGI_APPLICATION = "algorithmServer.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "webdb",
-        "USER": "erix", 
-        "PASSWORD": "POKIDT7F",
-        "HOST": "123.60.139.196",
-        "PORT": "3306"
+        "NAME": "数据库名",
+        "USER": "用户名", 
+        "PASSWORD": "密码",
+        "HOST": "数据库地址",
+        "PORT": "端口号"
     }
 }
 

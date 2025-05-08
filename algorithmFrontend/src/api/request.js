@@ -3,7 +3,7 @@ import router from '@/router'  // 引入路由实例
 import { ElMessage } from 'element-plus'
 
 const request = axios.create({
-  baseURL: 'http://123.60.139.196/back',
+  baseURL: 'http://ip', // 改为你的实际ip
   timeout: 5000
 })
 

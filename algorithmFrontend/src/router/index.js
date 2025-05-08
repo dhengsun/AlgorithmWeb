@@ -2,25 +2,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 // 定义路由
 const routes = [
-  // 不需要导航栏的路由
   {
     path: '/login',
     name: 'LoginView',
     component: () => import('../views/LoginView.vue'),
     meta: { 
-      hideHeader: true, // 标记不需要显示导航栏
-      guest: true       // 标记为访客页面（已登录用户不应访问）
+      hideHeader: true, 
+      guest: true       
     }
   },
-  // {
-  //   path: '/register',
-  //   name: 'RegisterView',
-  //   component: () => import('../views/RegisterView.vue'),
-  //   meta: { 
-  //     hideHeader: true,
-  //     guest: true
-  //   }
-  // },
+  {
+    path: '/register',
+    name: 'RegisterView',
+    component: () => import('../views/RegisterView.vue'),
+    meta: { 
+      hideHeader: true,
+      guest: true
+    }
+  },
   
   // 需要登录权限的路由
   {
