@@ -77,15 +77,11 @@ AlgorithmWeb
 │  ├─ storage 													# 文件存储
 │  │  └─ luogu_tags.xlsx
 │  ├─ algorithmServer
-│  │  ├─ asgi.py
-│  │  ├─ __init__.py
 │  │  ├─ settings.py										#全局配置
 │  │  ├─ urls.py												# api路由
-│  │  └─ wsgi.py 
 │  └─ algorithm
 │     ├─ models.py 											# 核心数据库模型
 │     ├─ serializers.py 								# 核心DRF序列化器
-│     ├─ __init__.py
 │     ├─ apps.py
 │     ├─ admin.py
 │     ├─ pagination.py									# 分页器
@@ -94,48 +90,16 @@ AlgorithmWeb
 │        ├─ luogu.py
 │        └─ leetcode.py
 └─ algorithmFrontend										# 前端
-   ├─ jsconfig.json
-   ├─ babel.config.js
-   ├─ package-lock.json
-   ├─ package.json
-   ├─ vue.config.js
    ├─ src																# 核心文件
    │  ├─ App.vue												
    │  ├─ main.js	
    │  ├─ router													# 前端路由
    │  │  └─ index.js
    │  ├─ assets													# 静态资源
-   │  │  ├─ auth.jpg
-   │  │  ├─ logo3.png
-   │  │  ├─ logo.png
-   │  │  └─ logo2.png
    │  ├─ views													# 核心视图
-   │  │  ├─ DraftUpdateView.vue
-   │  │  ├─ SolutionDetailView.vue
-   │  │  ├─ ProblemsView.vue
-   │  │  ├─ SolutionsView.vue
-   │  │  ├─ TrashView.vue
-   │  │  ├─ QuestionDetailView.vue
-   │  │  ├─ DraftTrashView.vue
-   │  │  ├─ SolutionTrashView.vue
-   │  │  ├─ QuestionUpdate.vue
-   │  │  ├─ RegisterView.vue
-   │  │  ├─ LoginView.vue
-   │  │  ├─ CreateView.vue
-   │  │  ├─ ProblemTrashView.vue
-   │  │  ├─ HomeView.vue
-   │  │  ├─ CreateQuestionView.vue
-   │  │  ├─ SolutionUpdateView.vue
-   │  │  ├─ CreateSolutionView.vue
-   │  │  ├─ DraftDetailView.vue
-   │  │  ├─ NotFoundView.vue
-   │  │  └─ DraftsView.vue
    │  ├─ api														# 核心接口
-   │  │  ├─ solution.js			
    │  │  ├─ request.js									#前后端通信配置，请求、响应拦截器
-   │  │  ├─ question.js
-   │  │  ├─ activity.js
-   │  │  └─ auth.js
+   │  │  └─ ...
    │  ├─ components											# 可复用组件
    │  │  └─ AppHeader.vue								# 导航栏
    │  └─ constants
@@ -143,9 +107,6 @@ AlgorithmWeb
    └─ public
       ├─ index.html
       └─ assets
-         ├─ favicon.ico
-         ├─ logo.png
-         └─ logo4.png
 
 ```
 
